@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Programme TV</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('navbar') %>
+    <h1>Programme TV</h1>
+    <ul>
+        <% programmes.forEach(programme => { %>
+            <li><strong><%= programme.titre %></strong> - <%= programme.heure %> - <%= programme.description %></li>
+        <% }); %>
+    </ul>
+    <%- include('footer') %>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('navbar') %>
+    <h1>Notre équipe</h1>
+    <ul>
+        <% equipe.forEach(membre => { %>
+            <li><%= membre.nom %> - <%= membre.role %></li>
+        <% }); %>
+    </ul>
+    <%- include('footer') %>
+</body>
+</html>
