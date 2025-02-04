@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+h1,p, li,h4 {
+    color: #ffd700;
+}
+
 /* Navigation */
 nav {
     background-color: #333;
@@ -66,3 +70,34 @@ footer {
     padding: 10px;
 }
 
+body{
+    margin: 0; /* Supprime les marges par défaut de la page */
+    padding: 0; /* Supprime les espacements internes par défaut de la page */
+    font-family: 'Arial', sans-serif; /* Définit la police principale comme Arial ou une police sans-serif */
+    background: url('/images/sky.jpg') no-repeat center center fixed; /* Applique une image de fond centrée et fixe */
+    background-size: cover; /* L'image de fond s'adapte à la taille de l'écran */
+    color: #333; /* Définit la couleur principale du texte en gris foncé */
+    line-height: 1.6; /* Définit l'interligne à 1.6 pour une meilleure lisibilité */
+}
+
+/* image */
+.card {
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+    transition:  0.3s;
+    width: 40%;
+
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: auto;
+  }
+  
+  .card:hover {
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding:  2px 16px;
+  }

@@ -8,11 +8,55 @@
 <body>
     <%- include('navbar') %>
     <h1>Notre équipe</h1>
-    <ul>
-        <% equipe.forEach(membre => { %>
-            <li><%= membre.nom %> - <%= membre.role %></li>
-        <% }); %>
-    </ul>
-    <%- include('footer') %>
+
+    <div class="card">
+        <img src="/images/fred.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Fred Musa</b></h4>
+          <p>Programmeur d'Emission</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/kicht.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Kicht</b></h4>
+          <p>Cam</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/mc_baba.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Mc baba</b></h4>
+          <p>Cam</p>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <img src="/images/papinot.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Papinot</b></h4>
+          <p>Chef d'Emission</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/sherko.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Sherko</b></h4>
+          <p>Ingénieur son</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="/images/wt.jpg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>William Thomas</b></h4>
+          <p>Réalisateur</p>
+        </div>
+      </div>
 </body>
+<%- include('footer') %>
 </html>
