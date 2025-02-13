@@ -1,4 +1,6 @@
+// importation du module de connexion a la base de données 
 const db = require('../models/db');
+// importation de bcrypt pour le hachage des mots de passe
 const bcrypt = require('bcrypt');
 
 // Inscription d'un utilisateur
